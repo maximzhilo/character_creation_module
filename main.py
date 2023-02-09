@@ -1,11 +1,9 @@
 from random import randint
-
-
 from graphic_arts.start_game_banner import run_screensaver
 
 
 def attack(char_name: str, char_class: str) -> str:
-    """ Функия атаки вашего персонажа."""
+    """Функия атаки вашего персонажа."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон противнику '
                 f'равный {5 + randint(3, 5)}')
